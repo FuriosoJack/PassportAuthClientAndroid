@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        Dotenv dot = Dotenv.configure().directory("/assets").filename("env").load();
+        Dotenv dot = Dotenv.configure().directory("/assets").filename("env.txt").load();
         String clien = dot.get("CLIENT_ID");
         Log.d("CLIEN", clien);
     }
